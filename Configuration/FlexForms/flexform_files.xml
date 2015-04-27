@@ -1,0 +1,93 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>Function</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<switchableControllerActions>
+						<TCEforms>
+							<label>Select function</label>
+							<onChange>reload</onChange>
+							<config>
+								<type>select</type>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">Dateiliste</numIndex>
+										<numIndex index="1">File->list;File->search;File->download</numIndex>
+									</numIndex>
+									<numIndex index="1">
+										<numIndex index="0">Dateisuche</numIndex>
+										<numIndex index="1">File->search;File->list;File->download</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</switchableControllerActions>
+					<settings.search.prefix>
+						<TCEforms>
+							<label>Präfix für Suchwort</label>
+							<config>
+								<type>input</type>
+							</config>
+						</TCEforms> 
+					</settings.search.prefix>
+					<settings.search.fileExtensions>
+						<TCEforms>
+							<label>Präfix für Suchwort</label>
+							<config>
+								<type>check</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">pdf</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">jpeg</numIndex>
+										<numIndex index="1">2</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">jpg</numIndex>
+										<numIndex index="1">3</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">gif</numIndex>
+										<numIndex index="1">4</numIndex>
+									</numIndex>
+									<numIndex index="4" type="array">
+										<numIndex index="0">tif</numIndex>
+										<numIndex index="1">5</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms> 
+					</settings.search.fileExtensions>
+					<settings.directdownload>
+						<TCEforms>
+							<label>Datei direkt her unterladen</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">nein</numIndex>
+										<numIndex index="1">0</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">ja</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+								</items>
+								<default>0</default>
+							</config>
+						</TCEforms> 
+					</settings.directdownload>
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>

@@ -1,0 +1,56 @@
+<f:layout name="Default" />
+
+<f:section name="main">
+	
+	<f:flashMessages renderMode="div" />
+	
+	<f:form method="POST" class="filesearch" name="file row-fluid" action="search">
+		<div class="well">
+
+			<div class="col-md-4">
+				<p>
+					Die mit einer fas Dokumentennummer zitierten Fundstellen können hier nach Eingabe der Dokumentennummer heruntergeladen werden. 
+				</p>
+			</div>
+			<div class="col-md-4">
+				<label>
+					Dokumentennummer eingeben
+				</label>
+				<div class="input-group">
+					<span class="input-group-addon">fas-</span><f:form.textfield value="{q}" name="q" class="form-control file-search-q"/>
+				</div>
+			</div>
+			<div class="col-md-4 btn-wrapper">
+				<f:form.submit value="{f:if(condition:'{settings.directdownload}==1',then:'Datei herunterladen',else:'Datei suchen')}" class="col-md-4 btn btn-primary"/>
+			</div>
+		</div>
+	</f:form>
+	
+	<f:if condition="{q}">
+		<div class="row-fluid">
+			<f:if condition="{files}">
+				<f:then>
+					<f:if condition="{settings.directdownload}">
+						<f:else>
+							<div class="list file-list">
+								<f:for each="{files}" as="file">
+									<div calss="item">
+										<a href="/index.php?eID=fal_download&tx_z3fal_file[hash]={file.sha1}&tx_z3fal_file[file]={file.uid}">{file.name}</a>
+									</div>
+								</f:for>
+							</div>
+						</f:else>
+					</f:if>
+				</f:then>
+				<f:else>
+					<div class="col-xs-12">
+						<div class="alert alert-info file-search-alert">
+							Leider haben wir diese Dokumentennummer nicht gefunden.<br>
+							bitte prüfen Sie ihre Eingabe.
+						</div>
+					</div>
+				</f:else>
+			</f:if>
+		</div>
+	</f:if>
+</f:section>

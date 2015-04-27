@@ -1,0 +1,11 @@
+
+plugin.tx_z3fal {
+	view {
+		# cat=plugin.tx_z3fal/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:z3_fal/Resources/Private/Templates/
+		# cat=plugin.tx_z3fal/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:z3_fal/Resources/Private/Partials/
+		# cat=plugin.tx_z3fal/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:z3_fal/Resources/Private/Layouts/
+	}
+}

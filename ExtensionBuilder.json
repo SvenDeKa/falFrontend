@@ -1,0 +1,98 @@
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    85,
+                    74
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": true,
+                    "_default1_show": false,
+                    "_default2_new_create": false,
+                    "_default3_edit_update": false,
+                    "_default4_delete": false,
+                    "customActions": [
+                        "search",
+                        "download"
+                    ]
+                },
+                "name": "File",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": false,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "\\TYPO3\\CMS\\Extbase\\Domain\\Model\\File",
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "829087225325"
+                },
+                "propertyGroup": {
+                    "properties": [
+
+                    ]
+                },
+                "relationGroup": {
+                    "relations": [
+
+                    ]
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [
+
+        ],
+        "description": "Fal-Frontend with list and search. for now. to be extended!",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 6.2\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "6.2",
+            "version": ""
+        },
+        "extensionKey": "z3_fal",
+        "name": "z3 Fal",
+        "originalExtensionKey": "z3_fal",
+        "persons": [
+            {
+                "company": "lwf",
+                "email": "sven.kuelpmann@lenz-wie-fruehling.de",
+                "name": "Sven K\u00fclpmann",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "File=>search,list",
+                    "noncacheableActions": "File=>search,download",
+                    "switchableActions": "Dateiliste\nFile->list;File->search;File->download;"
+                },
+                "key": "Files",
+                "name": "Files"
+            }
+        ],
+        "vendorName": "Z3"
+    },
+    "wires": [
+
+    ],
+    "log": {
+        "last_modified": "2015-02-23 06:31",
+        "extension_builder_version": "6.2.0",
+        "be_user": " (6)"
+    }
+}

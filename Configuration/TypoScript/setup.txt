@@ -1,0 +1,16 @@
+
+plugin.tx_z3fal {
+
+	features {
+		rewrittenPropertyMapper = 1
+	}
+	view {
+		templateRootPath = {$plugin.tx_z3fal.view.templateRootPath}
+		partialRootPath = {$plugin.tx_z3fal.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_z3fal.view.layoutRootPath}
+	}
+	settings.search{
+		collection.Uid = 1
+		searchWordGlue = _,\s
+	}
+}

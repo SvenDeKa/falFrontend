@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-02-23T18:31:49Z" product-name="z3_fal">
+		<header/>
+		<body>
+			<trans-unit id="tx_z3fal_domain_model_file">
+				<source>File</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_z3fal.label.search">
+				<source>Search for File</source>
+			</trans-unit>
+			<trans-unit id="tx_z3fal.label.download">
+				<source>Download File</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
